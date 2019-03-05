@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'DFEvalKit_Example' do
+  pod 'DFEvalKit', :path => '../'
+
+  target 'DFEvalKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
