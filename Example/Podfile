@@ -4,6 +4,11 @@ platform :ios, '8.0'
 
 target 'DFEvalKit_Example' do
   pod 'DFEvalKit', :path => '../'
+  
+  pod 'FSTextView'
+  pod 'Masonry'
+  pod 'Aspects'
+  pod 'ZWLimitCounter'
 
   target 'DFEvalKit_Tests' do
     inherit! :search_paths

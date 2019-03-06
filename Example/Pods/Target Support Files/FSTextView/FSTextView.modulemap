@@ -1,0 +1,6 @@
+framework module FSTextView {
+  umbrella header "FSTextView-umbrella.h"
+
+  export *
+  module * { export * }
+}

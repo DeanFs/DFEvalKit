@@ -1,0 +1,35 @@
+PODS:
+  - Aspects (1.4.1)
+  - DFEvalKit (0.1.0)
+  - FSTextView (1.8)
+  - Masonry (1.1.0)
+  - ZWLimitCounter (0.0.4)
+
+DEPENDENCIES:
+  - Aspects
+  - DFEvalKit (from `../`)
+  - FSTextView
+  - Masonry
+  - ZWLimitCounter
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Aspects
+    - FSTextView
+    - Masonry
+    - ZWLimitCounter
+
+EXTERNAL SOURCES:
+  DFEvalKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
+  DFEvalKit: e92fdf24c4f53496f001af9cd751f097bde3f339
+  FSTextView: 9e2ca07bb6bb0fb7e77b49b2717adf81f3c620b5
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  ZWLimitCounter: 382d8a4f063980f18022749672b89e0558087007
+
+PODFILE CHECKSUM: 36dc93e071d3a4e067d6a9355cfa5bac8597f926
+
+COCOAPODS: 1.6.0

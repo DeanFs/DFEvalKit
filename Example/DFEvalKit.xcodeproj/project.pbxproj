@@ -24,6 +24,9 @@
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		9C9045B286784E1459973854 /* Pods_DFEvalKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2689AE21F4078EFD3B2CC409 /* Pods_DFEvalKit_Tests.framework */; };
 		BE3F40BAAD55F5DC9621C057 /* Pods_DFEvalKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45E93A2B15AEF32C5F98196 /* Pods_DFEvalKit_Example.framework */; };
+		FE0ADC99222F7C7B00C40261 /* ReadMe.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FE0ADC98222F7C7B00C40261 /* ReadMe.rtf */; };
+		FE6DB87D222F7BA600EC3020 /* UIResponder+InsertTextAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6DB879222F7BA600EC3020 /* UIResponder+InsertTextAdditions.m */; };
+		FE6DB87E222F7BA600EC3020 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6DB87A222F7BA600EC3020 /* UIView+Frame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +42,7 @@
 /* Begin PBXFileReference section */
 		03D2434BBF2324C6A63C35B5 /* Pods-DFEvalKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DFEvalKit_Example.release.xcconfig"; path = "Target Support Files/Pods-DFEvalKit_Example/Pods-DFEvalKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		2689AE21F4078EFD3B2CC409 /* Pods_DFEvalKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DFEvalKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		381E33F57225EFF0E2E76A18 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		381E33F57225EFF0E2E76A18 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		49CC8AA4580A7AF964490071 /* Pods-DFEvalKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DFEvalKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-DFEvalKit_Tests/Pods-DFEvalKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* DFEvalKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DFEvalKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -60,13 +63,18 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		669F762913FCE9CD51625315 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		669F762913FCE9CD51625315 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B041E435BBC6A27B67C4359D /* Pods-DFEvalKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DFEvalKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-DFEvalKit_Example/Pods-DFEvalKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		CE9F345A2C545680308F773F /* DFEvalKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = DFEvalKit.podspec; path = ../DFEvalKit.podspec; sourceTree = "<group>"; };
+		CE9F345A2C545680308F773F /* DFEvalKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DFEvalKit.podspec; path = ../DFEvalKit.podspec; sourceTree = "<group>"; };
 		D45E93A2B15AEF32C5F98196 /* Pods_DFEvalKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DFEvalKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDEF145E7D073BBCA5EED978 /* Pods-DFEvalKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DFEvalKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-DFEvalKit_Tests/Pods-DFEvalKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		FE0ADC98222F7C7B00C40261 /* ReadMe.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = ReadMe.rtf; sourceTree = "<group>"; };
+		FE6DB879222F7BA600EC3020 /* UIResponder+InsertTextAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+InsertTextAdditions.m"; sourceTree = "<group>"; };
+		FE6DB87A222F7BA600EC3020 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		FE6DB87B222F7BA600EC3020 /* UIResponder+InsertTextAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+InsertTextAdditions.h"; sourceTree = "<group>"; };
+		FE6DB87C222F7BA600EC3020 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +111,6 @@
 				49CC8AA4580A7AF964490071 /* Pods-DFEvalKit_Tests.debug.xcconfig */,
 				EDEF145E7D073BBCA5EED978 /* Pods-DFEvalKit_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -150,7 +157,9 @@
 				6003F5A5195388D20070C39A /* DFViewController.h */,
 				6003F5A6195388D20070C39A /* DFViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
+				FE6DB878222F7BA600EC3020 /* Categories */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
+				FE0ADC98222F7C7B00C40261 /* ReadMe.rtf */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
 			name = "Example for DFEvalKit";
@@ -195,6 +204,17 @@
 				381E33F57225EFF0E2E76A18 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		FE6DB878222F7BA600EC3020 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				FE6DB879222F7BA600EC3020 /* UIResponder+InsertTextAdditions.m */,
+				FE6DB87A222F7BA600EC3020 /* UIView+Frame.m */,
+				FE6DB87B222F7BA600EC3020 /* UIResponder+InsertTextAdditions.h */,
+				FE6DB87C222F7BA600EC3020 /* UIView+Frame.h */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +268,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = Dean_F;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 46UN65B23Q;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -280,6 +303,7 @@
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				FE0ADC99222F7C7B00C40261 /* ReadMe.rtf in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,13 +372,21 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-DFEvalKit_Example/Pods-DFEvalKit_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Aspects/Aspects.framework",
 				"${BUILT_PRODUCTS_DIR}/DFEvalKit/DFEvalKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FSTextView/FSTextView.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/ZWLimitCounter/ZWLimitCounter.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Aspects.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DFEvalKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSTextView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZWLimitCounter.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -368,8 +400,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE6DB87D222F7BA600EC3020 /* UIResponder+InsertTextAdditions.m in Sources */,
 				6003F59E195388D20070C39A /* DFAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* DFViewController.m in Sources */,
+				FE6DB87E222F7BA600EC3020 /* UIView+Frame.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,6 +532,7 @@
 			baseConfigurationReference = B041E435BBC6A27B67C4359D /* Pods-DFEvalKit_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 46UN65B23Q;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DFEvalKit/DFEvalKit-Prefix.pch";
 				INFOPLIST_FILE = "DFEvalKit/DFEvalKit-Info.plist";
@@ -513,6 +548,7 @@
 			baseConfigurationReference = 03D2434BBF2324C6A63C35B5 /* Pods-DFEvalKit_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 46UN65B23Q;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DFEvalKit/DFEvalKit-Prefix.pch";
 				INFOPLIST_FILE = "DFEvalKit/DFEvalKit-Info.plist";
