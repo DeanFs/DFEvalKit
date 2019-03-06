@@ -20,17 +20,17 @@
 
 7.  支持字符串相加（字符串拼接）；
 
-8.  开发者可以扩展自己的函数，通过构建 **HMExpressionFunction** 对象来声明自定义的函数，详细使用方式可以参考 demo。
+8.  开发者可以扩展自己的函数，通过构建 **DFEvaluatorFunction** 对象来声明自定义的函数，详细使用方式可以参考 demo。
 
 ## Usage
 
 1. 引入头文件
 
 	```Objective-C
-	#import"HMExpressionEvaluator.h"
+	#import <DFEvalKit/DFEvaluator.h>
 	```
 	
-	**HMExpressionEvaluator.h** 文件中只声明了4个方法：<br>
+	**DFEvaluator.h** 文件中只声明了4个方法：<br>
 	- -(id)eval:(NSString *)expression // 用于传入表达式进行计算并返回计算结果<br>
 	- -(void)setCustomFunctions:(NSDictionary *)customFunctions // 用于给开发者注册自定义方法<br>
 	- -(void)setDateFormatter:(NSDateFormatter *)dateFormatter // 设置支持的日期格式，默认只支持 yyyy-MM-dd HH:mm:ss 格式<br>
@@ -39,9 +39,9 @@
 	开发者仅需通过这4个 **API** 来使用表达式计算全部功能<br>
 		
 	```Objective-C
-	// HMExpressionEvaluator.h
+	// DFEvaluator.h
 
-    @interface HMExpressionEvaluator : NSObject
+    @interface DFEvaluator : NSObject
 
 	#pragma mark - API
 	/**
@@ -56,7 +56,7 @@
 	/**
 	 *	设置开发者自定义的函数集
 	 *
-	 *  @param customFunctions 每个函数用 HMExpressionCustomFunction 对象来描述，以函数名为 key
+	 *  @param customFunctions 每个函数用 DFEvaluatorFunction 对象来描述，以函数名为 key
 	 *                         
 	 */
 	- (void)setCustomFunctions:(NSDictionary *)customFunctions;
@@ -81,7 +81,7 @@
 	1. 支持的数学运算操作符和操作数类型
 	
 		```Objective-C
-		typedef NS_ENUM(NSInteger, HMExpressionNodeType)
+		typedef NS_ENUM(NSInteger, DFEvaluatorNodeType)
 		{
 		    /**
 		     * 未知  0
@@ -213,19 +213,19 @@
 
 		```Objective-C
 		// 简单四则运算
-		[HMExpressionEvaluator eval:@"22 + 33 * 66 + 3^5"]; // 3^5 3的5次方
+		[DFEvaluator eval:@"22 + 33 * 66 + 3^5"]; // 3^5 3的5次方
 		
 		// 简单比较运算
-		[HMExpressionEvaluator eval:@"5 < 6"];
+		[DFEvaluator eval:@"5 < 6"];
 		
 		// 逻辑运算
-		[HMExpressionEvaluator eval:@"5 < 3 || 6 > 5)"];
+		[DFEvaluator eval:@"5 < 3 || 6 > 5)"];
 		
 		// 位运算
-		[HMExpressionEvaluator eval:@"4 << 5"];
+		[DFEvaluator eval:@"4 << 5"];
 		
 		// 字符串相加
-		[HMExpressionEvaluator eval:@"\"Hello\" + \" \" + \"World\" << 5"];
+		[DFEvaluator eval:@"\"Hello\" + \" \" + \"World\" << 5"];
 		```
 	3. 包含函数的运算
 		
@@ -287,17 +287,17 @@
 			
 			```Objective-C
 			// 三目运算函数
-			[HMExpressionEvaluator eval:@"ternaryOperation(5<7, \"真\", \"假\")"];
+			[DFEvaluator eval:@"ternaryOperation(5<7, \"真\", \"假\")"];
 			
 			// 获取大写金额
-			[HMExpressionEvaluator eval:@"getLocalMoney(10086)"];
+			[DFEvaluator eval:@"getLocalMoney(10086)"];
 			
 			// 复杂混合运算表达式
-			[HMExpressionEvaluator eval:@"dateDiff(\"dd\", \"2016-12-17\", now()) * 10 - getYear(now()) + max(11, 22,33,1000) * sqrt(floor(1000.445))"];
+			[DFEvaluator eval:@"dateDiff(\"dd\", \"2016-12-17\", now()) * 10 - getYear(now()) + max(11, 22,33,1000) * sqrt(floor(1000.445))"];
 			```
 		3. 自定义函数的使用，以 demo 为例：
 			<br><br>**第一步：自定义方法的OC实现**
-			<br><br>demo 中在 ViewController.m 实现了如下四个方法，可以看到返回时，均构建了 HMExpressionCustomFunctionResult 类实例来返回，这是必须的；
+			<br><br>demo 中在 ViewController.m 实现了如下四个方法，可以看到返回时，均构建了 DFEvaluatorFunctionResult 类实例来返回，这是必须的；
 			<br> 方法中传入的 param 会根据表达式中调用函数时括号内传入的参数情况解析成字符串，一维数组，或者二维数组，具体规则看如下代码段的注释。
 			
 			```Objective-C
@@ -306,12 +306,12 @@
 			 *  不带参函数
 			 *  在表达式中写入 test1()
 			 *
-			 *  @return 创建 HMExpressionFunctionResult 实例，返回函数运行结果
+			 *  @return 创建 DFEvaluatorFunctionResult 实例，返回函数运行结果
 			 */
-			- (HMExpressionCustomFunctionResult *)test1
+			- (DFEvaluatorFunctionResult *)test1
 			{
-			    return [[HMExpressionCustomFunctionResult alloc] initWithResult:@"测试不带参函数"
-			                                                     dataType:HMExpressionCustomFunctionResultDataTypeString] ;
+			    return [[DFEvaluatorFunctionResult alloc] initWithResult:@"测试不带参函数"
+			                                                     dataType:DFEvaluatorFunctionResultDataTypeString] ;
 			}
 			
 			/*
@@ -319,12 +319,12 @@
 			 *
 			 *  @param param 如在表达式中写：test2(123) 则此处 param 为: @"123"
 			 *
-			 *  @return 创建 HMExpressionFunctionResult 实例，返回函数运行结果
+			 *  @return 创建 DFEvaluatorFunctionResult 实例，返回函数运行结果
 			 */
-			- (HMExpressionCustomFunctionResult *)test2:(id)param
+			- (DFEvaluatorFunctionResult *)test2:(id)param
 			{
-			    return [[HMExpressionCustomFunctionResult alloc] initWithResult:[NSString stringWithFormat:@"测试带参函数，传入参数为：%@", param]
-			                                                     dataType:HMExpressionCustomFunctionResultDataTypeString];
+			    return [[DFEvaluatorFunctionResult alloc] initWithResult:[NSString stringWithFormat:@"测试带参函数，传入参数为：%@", param]
+			                                                     dataType:DFEvaluatorFunctionResultDataTypeString];
 			}
 			
 			/*
@@ -333,9 +333,9 @@
 			 *
 			 *  @param param 此处得到 param 为一维数组 @[@"123", @"456", @"789"...]
 			 *
-			 *  @return 创建 HMExpressionFunctionResult 实例，返回函数运行结果
+			 *  @return 创建 DFEvaluatorFunctionResult 实例，返回函数运行结果
 			 */
-			- (HMExpressionCustomFunctionResult *)test3:(id)param
+			- (DFEvaluatorFunctionResult *)test3:(id)param
 			{
 			    // 将所有参数拼接成一个字符串
 			    
@@ -345,8 +345,8 @@
 			        [result appendString:str];
 			    }
 			    
-			    return [[HMExpressionCustomFunctionResult alloc] initWithResult:result
-			                                                     dataType:HMExpressionCustomFunctionResultDataTypeString];
+			    return [[DFEvaluatorFunctionResult alloc] initWithResult:result
+			                                                     dataType:DFEvaluatorFunctionResultDataTypeString];
 			}
 			
 			/*
@@ -355,9 +355,9 @@
 			 *
 			 *  @param param 此处得到 param 为二维数组 @[@"123", @[@"456", @"789"], @"333", @[@"234"]...]
 			 *
-			 *  @return 创建 HMExpressionFunctionResult 实例，返回函数运行结果
+			 *  @return 创建 DFEvaluatorFunctionResult 实例，返回函数运行结果
 			 */
-			- (HMExpressionCustomFunctionResult *)test4:(id)param
+			- (DFEvaluatorFunctionResult *)test4:(id)param
 			{
 			    NSMutableString *result = [NSMutableString string];
 			    
@@ -376,12 +376,12 @@
 			        }
 			    }
 			    
-			    return [[HMExpressionCustomFunctionResult alloc] initWithResult:result
-			                                                     dataType:HMExpressionCustomFunctionResultDataTypeString];
+			    return [[DFEvaluatorFunctionResult alloc] initWithResult:result
+			                                                     dataType:DFEvaluatorFunctionResultDataTypeString];
 			}
 			```
-			**第二步：构建 HMExpressionCustomFunction 实例**
-			<br><br>如下代码将上述四个 test 方法分别构建一个 HMExpressionCustomFunction 实例来进行描述，并以用于表达式调用的函数名为 key 存入字典，准备注入表达式解析计算器中。
+			**第二步：构建 DFEvaluatorFunction 实例**
+			<br><br>如下代码将上述四个 test 方法分别构建一个 DFEvaluatorFunction 实例来进行描述，并以用于表达式调用的函数名为 key 存入字典，准备注入表达式解析计算器中。
 			
 			```Objective-C
 			- (NSDictionary *)customFunctions
@@ -390,22 +390,22 @@
 			    {
 			        _customFunctions = [NSMutableDictionary dictionary];
 			        
-			        HMExpressionCustomFunction *function = [[HMExpressionCustomFunction alloc] initWithFunctionName:@"test1"
+			        DFEvaluatorFunction *function = [[DFEvaluatorFunction alloc] initWithFunctionName:@"test1"
 			                                                                                                         selector:@selector(test1)
 			                                                                                                           target:self];
 			        [_customFunctions setObject:function forKey:function.functionName];
 			        
-			        function = [[HMExpressionCustomFunction alloc] initWithFunctionName:@"test2"
+			        function = [[DFEvaluatorFunction alloc] initWithFunctionName:@"test2"
 			                                                                        selector:@selector(test2:)
 			                                                                          target:self];
 			        [_customFunctions setObject:function forKey:function.functionName];
 			        
-			        function = [[HMExpressionCustomFunction alloc] initWithFunctionName:@"test3"
+			        function = [[DFEvaluatorFunction alloc] initWithFunctionName:@"test3"
 			                                                                        selector:@selector(test3:)
 			                                                                          target:self];
 			        [_customFunctions setObject:function forKey:function.functionName];
 			        
-			        function = [[HMExpressionCustomFunction alloc] initWithFunctionName:@"test4"
+			        function = [[DFEvaluatorFunction alloc] initWithFunctionName:@"test4"
 			                                                                        selector:@selector(test4:)
 			                                                                          target:self];
 			        [_customFunctions setObject:function forKey:function.functionName];
@@ -413,18 +413,18 @@
 			    return _customFunctions;
 			}
 			```
-			**第三步：将构建好的 HMExpressionCustomFunction 实例注入表达式解析计算器**
+			**第三步：将构建好的 DFEvaluatorFunction 实例注入表达式解析计算器**
 			<br><br>代码如下，即在 demo 中点击 “计算” 按钮时执行的代码
 			
 			```Objective-C
 			/*
 			 *  创建表达式计算器对象
 			 */
-			- (HMExpressionEvaluator *)evaluator
+			- (DFEvaluator *)evaluator
 			{
 			    if(!_evaluator)
 			    {
-			        _evaluator = [[HMExpressionEvaluator alloc] init];
+			        _evaluator = [[DFEvaluator alloc] init];
 			        [_evaluator setCustomFunctions:self.customFunctions]; // 注入自定义函数集
 			        
 			        // 默认就是这个格式
@@ -438,7 +438,7 @@
 			```
 				
 <br>	
-由于时间问题，详细的说明以后再补，感兴趣请下载demo研究，运行后，点击快速测试，快速一睹 HMExpressionValuator 的风采吧！
+由于时间问题，详细的说明以后再补，感兴趣请下载demo研究，运行后，点击快速测试，快速一睹 DFEvaluatorValuator 的风采吧！
 
 ## Example
 
