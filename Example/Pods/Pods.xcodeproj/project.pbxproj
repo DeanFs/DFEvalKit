@@ -124,12 +124,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0004A08FD257735FD2693E673DD37453 /* DFEvalKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DFEvalKit.framework; path = DFEvalKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0004A08FD257735FD2693E673DD37453 /* DFEvalKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DFEvalKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		00C6208EEE325C45D78B6AA1380BABEF /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		0219003317939329F52E1A906CA19B11 /* DFEvalKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DFEvalKit-prefix.pch"; sourceTree = "<group>"; };
-		04046CA29ADDF586DA987A48E9EA0F9A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		04046CA29ADDF586DA987A48E9EA0F9A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		05D349383313AF6B5D0ED4D0302812C6 /* DFRegexKitLite.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DFRegexKitLite.m; sourceTree = "<group>"; };
-		08E4915DB68F1104F598695F27B98F93 /* Pods_DFEvalKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DFEvalKit_Example.framework; path = "Pods-DFEvalKit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		08E4915DB68F1104F598695F27B98F93 /* Pods_DFEvalKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DFEvalKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14316B6506658BBF4261F908292FFD87 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
 		14350BD9D4204EAF1D36564D34CDAABA /* Pods-DFEvalKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DFEvalKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		14A2B6384AD859CBD8CFCC0246BA21E4 /* FSTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSTextView.h; path = FSTextView/FSTextView.h; sourceTree = "<group>"; };
@@ -142,7 +142,7 @@
 		2673E4548DAE48EFAAE03087A321D9DF /* DFEvalKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DFEvalKit.xcconfig; sourceTree = "<group>"; };
 		29A7410D488DE9A87FCEFDB6CDB8B371 /* FSTextView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSTextView-umbrella.h"; sourceTree = "<group>"; };
 		29A7499E7871831664DBD48F4087BC0F /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
-		2B2ECDEE995BC67D69E0D236E5705A6E /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Masonry.framework; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B2ECDEE995BC67D69E0D236E5705A6E /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B4E4A23808BC776CA72838AEECD6DF3 /* ZWLimitCounter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZWLimitCounter.xcconfig; sourceTree = "<group>"; };
 		2C090466EFC3FAFE9C8225AF55BE592B /* DFEvaluatorStack.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DFEvaluatorStack.m; sourceTree = "<group>"; };
 		2CA4CCCD423CBC2AD3FBF392DA349DD2 /* Aspects-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Aspects-prefix.pch"; sourceTree = "<group>"; };
@@ -153,7 +153,7 @@
 		395986FDB1B95B8029A9644F11659EA3 /* FSTextView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FSTextView-dummy.m"; sourceTree = "<group>"; };
 		3999333A54C3A3F7E8B911A8EDF319D0 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
 		3EC6E1CF6E42726B4C2BC0B084D377C3 /* ZWLimitCounter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZWLimitCounter-dummy.m"; sourceTree = "<group>"; };
-		405CFD03C421AB522D06BE9E0FBF91C1 /* ZWLimitCounter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZWLimitCounter.framework; path = ZWLimitCounter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		405CFD03C421AB522D06BE9E0FBF91C1 /* ZWLimitCounter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZWLimitCounter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		40D375681ABF81734C76801360F53DCC /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
 		449342943D93C95B169B47A5355C0029 /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
@@ -168,7 +168,7 @@
 		5560FB938C3B9EF3CE813DE3C4B5AE4A /* Masonry.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.xcconfig; sourceTree = "<group>"; };
 		559B5CF679EF6B28D1F215114D584F3C /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
 		57B213C32216937DC88DF6C675F87406 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
-		5A0047B314E9D5A895090DFBD2775360 /* DFEvalKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = DFEvalKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5A0047B314E9D5A895090DFBD2775360 /* DFEvalKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = DFEvalKit.podspec; sourceTree = "<group>"; tabWidth = 2; };
 		638A03FEEDC97F06FB063A1E6C10B877 /* ZWLimitCounter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ZWLimitCounter.modulemap; sourceTree = "<group>"; };
 		646501A6F27E97745461EABDC3154DB6 /* DFRegexKitLite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DFRegexKitLite.h; sourceTree = "<group>"; };
 		66E34A34F102EC2DF0EEC8239A13D5EE /* Aspects.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Aspects.xcconfig; sourceTree = "<group>"; };
@@ -177,7 +177,7 @@
 		6E8A9A1AE899272DAB62DBA50EDFA697 /* DFEvaluatorParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DFEvaluatorParser.m; sourceTree = "<group>"; };
 		7015DC4F21B37F49A2E9C48EDDD58230 /* DFEvalKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DFEvalKit-dummy.m"; sourceTree = "<group>"; };
 		70746125BCFBB6CB2E8B886D20991309 /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
-		726AA081D8A82D096C3AE88B269CB67A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		726AA081D8A82D096C3AE88B269CB67A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		755FDC98B1349D87797A668F57670DE0 /* DFEvaluatorParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DFEvaluatorParser.h; sourceTree = "<group>"; };
 		77B2FA044FDFA32BF5C83AED8F5EF803 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
 		78FEC275D24CF25337116DCB65887696 /* ZWLimitCounter-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ZWLimitCounter-Info.plist"; sourceTree = "<group>"; };
@@ -194,12 +194,12 @@
 		96A897FC38D51A1409D1C6AF9C627292 /* DFEvaluatorFunctionNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DFEvaluatorFunctionNode.h; sourceTree = "<group>"; };
 		96E051036322EFAFA7670B610AEAB950 /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
 		96E770CAD48D43055AE766026FB5A555 /* ZWLimitCounter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZWLimitCounter-umbrella.h"; sourceTree = "<group>"; };
-		96F89949BC7CBBAD79C6CFE932438D39 /* Aspects.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Aspects.framework; path = Aspects.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96F89949BC7CBBAD79C6CFE932438D39 /* Aspects.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Aspects.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		975D4C1049D42A26536BCB3CF2F48FA1 /* FSTextView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FSTextView.modulemap; sourceTree = "<group>"; };
 		987CDAD723AB1B16EE8EE3E6E8E37B26 /* Pods-DFEvalKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DFEvalKit_Tests-dummy.m"; sourceTree = "<group>"; };
 		98BBBF4385A9E4A084A6006D2A99BE42 /* Pods-DFEvalKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DFEvalKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		9D25B1C053D12595E5ECBFE1AAE7F773 /* Masonry.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Masonry.modulemap; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9EA025F95A48DE7CCACBF2772DE661C4 /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
 		9FC90608E6FD93A5B17264252949CBFA /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
 		A8BB0F8A86963C882A72F70FE0587288 /* Aspects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Aspects.h; sourceTree = "<group>"; };
@@ -223,12 +223,12 @@
 		E65D7194CA03152B319E7D4956CBE9F8 /* FSTextView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSTextView-prefix.pch"; sourceTree = "<group>"; };
 		E6E21D3485AC4A24E5F755D43A977C89 /* DFEvaluatorFunctionResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DFEvaluatorFunctionResult.h; sourceTree = "<group>"; };
 		E6F4E00FE996B8ECCC0A74DCE254F10B /* DFEvalKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DFEvalKit-Info.plist"; sourceTree = "<group>"; };
-		E76C1AF36301B37230D811DB71DB581C /* FSTextView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FSTextView.framework; path = FSTextView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E76C1AF36301B37230D811DB71DB581C /* FSTextView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FSTextView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC582B9DFFD5778153EEE37768ECDD86 /* DFEvaluatorFunctionResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DFEvaluatorFunctionResult.m; sourceTree = "<group>"; };
 		ECF2A2B0720AE923C22BED3192888BE0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		ED504E83D9FD6DB116C0F19F10D5A28B /* DFEvaluator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DFEvaluator.m; sourceTree = "<group>"; };
 		F197E91D75196DFEEB7D383F274A6DA2 /* Pods-DFEvalKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DFEvalKit_Example-umbrella.h"; sourceTree = "<group>"; };
-		F570029BA63DBC869487DFEF8683078F /* Pods_DFEvalKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DFEvalKit_Tests.framework; path = "Pods-DFEvalKit_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F570029BA63DBC869487DFEF8683078F /* Pods_DFEvalKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DFEvalKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F83D35FAC879CAA0D49F49EF489C7670 /* Pods-DFEvalKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DFEvalKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		FEA7F1BE9077385EA090798776FDFDF9 /* Aspects-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Aspects-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -323,7 +323,6 @@
 				4B6E17E8B0BE175ECA8BFBE5A67F90C1 /* Aspects.m */,
 				95B527880C644E66ADEF1A9297539791 /* Support Files */,
 			);
-			name = Aspects;
 			path = Aspects;
 			sourceTree = "<group>";
 		};
@@ -425,7 +424,6 @@
 				89AB3516D705E10A4CB2994D7A5597CE /* FSTextView.m */,
 				C3503A755B53E5CDD22A706F5119A3A5 /* Support Files */,
 			);
-			name = FSTextView;
 			path = FSTextView;
 			sourceTree = "<group>";
 		};
@@ -514,7 +512,6 @@
 				C9014C11D38B7B3BD3E4674FF1FBB5BB /* ViewController+MASAdditions.m */,
 				9256B400EE2819ED4551AFBD8A1D2556 /* Support Files */,
 			);
-			name = Masonry;
 			path = Masonry;
 			sourceTree = "<group>";
 		};
@@ -525,7 +522,6 @@
 				2346162E1CCB2B080DD0A6DEEC126443 /* UITextView+ZWLimitCounter.m */,
 				C3B63E94005862223AFE064ED979C824 /* Support Files */,
 			);
-			name = ZWLimitCounter;
 			path = ZWLimitCounter;
 			sourceTree = "<group>";
 		};
@@ -823,6 +819,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
@@ -1066,8 +1063,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
